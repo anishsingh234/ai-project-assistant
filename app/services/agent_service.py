@@ -1,9 +1,12 @@
 from google import genai
 from app.config import settings
 from app.db.repositories import (
-    project_repo
+    agent_repo,
+    image_repo,
+    memory_repo
 )
-from app.db.repositories import agent_repo, image_repo, memory_repo, message_repo
+from app.db.repositories import message_repo
+from app.db.repositories import project_repo
 
 client = genai.Client(api_key=settings.gemini_api_key)
 

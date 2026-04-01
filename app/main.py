@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.api import agents, chat
+from app.api import images
 from app.api import projects
-from app.api import agents, chat, images
 
 app = FastAPI(
     title="AI Project Assistant",
